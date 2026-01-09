@@ -18,16 +18,17 @@ jobs:
           cache: 'npm'
           cache-dependency-path: site/
 
-      - name: Install Dependencies
+      - name: Install dependencies
+        working-directory: site/
         run: npm ci
 
       - name: Run Vite
         run: npm run build
 
-      - name: Upload Artifact
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site/dist
+          path: site/dist/
 
   deploy:
     runs-on: ubuntu-latest
