@@ -23,6 +23,7 @@ jobs:
         run: npm ci
 
       - name: Run Vite
+        working-directory: site/
         run: npm run build
 
       - name: Upload artifact
