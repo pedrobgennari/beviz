@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,10 +8,16 @@
 
         <title>BeViz</title>
 
-        <script defer type="module" src="js/main.js"></script>
+        <script defer type="module" src="js/test.js"></script>
+        <!-- <script defer type="module" src="js/main.js"></script>-->
     </head>
 
-    <body>
+    <body style="background-color: #000000">
         <canvas width="512" height="512"></canvas>
     </body>
+
+    <br>
+    <input type="range" id="temperatureSliderId" name="temperatureSlider" min="25" max="10000" />
+    <label for="temperatureSliderId" id="temperatureSliderLabelId" style="color: aliceblue">Temperature</label>
+
 </html>
